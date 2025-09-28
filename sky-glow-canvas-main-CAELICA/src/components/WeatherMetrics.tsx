@@ -69,7 +69,7 @@ export const WeatherMetrics = ({ weather }: WeatherMetricsProps) => {
           style={{ animationDelay: `${index * 0.1}s` }}
         >
           <metric.icon 
-            className={`w-6 h-6 mx-auto mb-2 ${metric.color} group-hover:animate-pulse`}
+            className={`w-6 h-6 mx-auto mb-2 ${metric.color} group-hover:animate-pulse-once`}
             strokeWidth={1.5}
           />
           <div className="text-sm font-body text-muted-foreground mb-1">
@@ -83,3 +83,4 @@ export const WeatherMetrics = ({ weather }: WeatherMetricsProps) => {
     </div>
   );
 };
+

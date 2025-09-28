@@ -16,13 +16,23 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/dashboard" element={<Index />} />
-          <Route path="/chatbot" element={<Chatbot />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+          {/* Main content */}
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/dashboard" element={<Index />} />
+              <Route path="/chatbot" element={<Chatbot />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+
+          {/* Footer */}
+          <footer className="p-4 text-center text-sm text-muted-foreground border-t">
+            Created by Caelica
+          </footer>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

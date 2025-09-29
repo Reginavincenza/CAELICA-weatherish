@@ -1,1 +1,2 @@
-# CAELICA-weatherish
+# Weatherish by CAELICA
+# contributors- 
